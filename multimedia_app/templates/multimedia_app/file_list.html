@@ -1,0 +1,14 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Media Files List</title>
+</head>
+<body>
+    <h2>Media Files List</h2>
+    {% for file in files %}
+        <p>{{ file.title }} - <a href="{{ file.file.url }}" target="_blank">View</a></p>
+    {% endfor %}
+</body>
+</html>

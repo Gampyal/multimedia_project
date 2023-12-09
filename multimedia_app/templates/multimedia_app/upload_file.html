@@ -1,0 +1,19 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Media File</title>
+</head>
+<body>
+    <h2>Upload Media File</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Upload</button>
+    </form>
+    <br>
+    <a href="{% url 'file_list' %}">Back to file list</a>
+</body>
+</html>
